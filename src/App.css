@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.swimlane-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.swimlane {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  min-height: 400px;
+  background-color: #f9f9f9;
+}
+
+.block {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 5px;
+  cursor: grab;
+  color: #f2f2f2;
+}
+
+.block-backlog {
+  background-color: red;
+}
+
+.block-inProgress {
+  background-color: yellow;
+  color: #000;
+}
+
+.block-done {
+  background-color: green;
+}
+
+.modal {
+  position: fixed;
+  top: 15%;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  width: 40%;
+  height: 70%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.modal li {
+  list-style: none;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 90%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.form-group button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  align-self: center;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
+}
+
+
+
